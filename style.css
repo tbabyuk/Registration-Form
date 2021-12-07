@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root {
+    --text-white:#eee8e8;
+    --error-color: #cc3d23;
+    --success-color: #23bb23;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+    height: 100vh;
+    background-image: url(sea.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 400px;
+    background-color: hsla(224, 61%, 12%, 0.9);
+    border-radius: 5px;
+    padding: 30px 40px;
+    color: var(--text-white);
+    box-shadow: 0px 0px 20px var(--text-white);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 7px;
+}
+
+input {
+    font-size: 15px;
+    padding: 8px;
+    background-color: hsla(224, 61%, 58%, 0.4);
+    border: 2px solid hsla(224, 61%, 32%);
+    border-radius: 5px;
+    color: inherit;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid hsl(224, 61%, 52%);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+small {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color:var(--error-color);
+}
+
+#submitBtn {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    color: inherit;
+    background-color:hsla(224, 61%, 32%, 0.9);
+    border: none;
+    border-radius: 5px;
+}
+
+#submitBtn:hover {
+    cursor: pointer;
+    background-color:hsla(224, 61%, 22%, 0.9);
+}
+
+#submitBtn:focus {
+    outline: 2px solid hsl(224, 61%, 52%);
+}
+
