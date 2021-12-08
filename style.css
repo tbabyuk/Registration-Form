@@ -66,6 +66,15 @@ input:focus {
     position: relative;
 }
 
+.form-group.success input {
+    border-color: var(--success-color);
+}
+
+.form-group.error input {
+    border-color:var(--error-color);
+}
+
+
 small {
     position: absolute;
     left: 0;
